@@ -17,17 +17,16 @@ export default function CTAFormSection() {
           <div className="space-y-6 text-white">
             
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-              Construa o futuro connosco.
+              Precisa de suporte especializado?
             </h2>
 
-            <p className="text-lg text-white/80 max-w-xl">
-              Participe nos nossos projectos estratégicos e descubra como o
-              Grupo ZAION está a transformar múltiplos sectores com visão,
-              inovação e impacto sustentável.
+            <p className="text-lg text-white/80 max-w-xl leading-relaxed">
+              Conte com uma equipa experiente pronta para apoiar o crescimento
+              do seu negócio ou o sucesso do seu percurso académico.
             </p>
 
-            <div className="text-white/60 text-sm">
-              Comece hoje mesmo.
+            <div className="text-[#C6A75E] font-medium text-base">
+              Fale agora com a nossa equipa e receba orientação personalizada.
             </div>
 
           </div>
@@ -94,6 +93,7 @@ export default function CTAFormSection() {
               </button>
 
             </form>
+
           </div>
 
         </div>

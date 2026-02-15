@@ -6,25 +6,25 @@ const team = [
   {
     name: "Ricardo Almeida",
     role: "Presidente Executivo",
-    image: "/images/team/team-1.jpg",
+    image: "/images/team-1.jpg",
     bio: "Lidera a estratégia global do grupo com foco em crescimento sustentável e inovação corporativa.",
   },
   {
     name: "Ana Martins",
     role: "Diretora de Operações",
-    image: "/images/team/team-2.jpg",
+    image: "/images/team-2.jpg",
     bio: "Responsável pela eficiência operacional e integração das unidades de negócio.",
   },
   {
     name: "Pedro Santos",
-    role: "Diretor Financeiro",
-    image: "/images/team/team-3.jpg",
-    bio: "Gestão financeira estratégica com forte orientação para sustentabilidade e expansão.",
+    role: "Diretor Decnologia",
+    image: "/images/team-3.jpeg",
+    bio: "Gestão e implementação estratégica com forte orientação para inovação e seguraça tencológica.",
   },
   {
     name: "Sofia Ramos",
     role: "Diretora Estratégica",
-    image: "/images/team/team-4.jpg",
+    image: "/images/team-4.jpg",
     bio: "Coordena inovação, planeamento estratégico e desenvolvimento corporativo.",
   },
 ]

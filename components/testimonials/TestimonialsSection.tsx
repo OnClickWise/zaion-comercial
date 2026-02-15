@@ -7,21 +7,21 @@ const testimonials = [
   {
     name: "Carlos Mendes",
     role: "CEO, Empresa Parceira",
-    image: "/images/testimonials/testimonial-1.jpg",
+    image: "/images/testimonial-1.png",
     content:
       "A ZAION demonstrou visão estratégica e excelência operacional em todos os projectos que desenvolvemos em conjunto.",
   },
   {
     name: "Mariana Costa",
     role: "Diretora Executiva",
-    image: "/images/testimonials/testimonial-2.jpg",
+    image: "/images/testimonial-2.png",
     content:
       "Profissionalismo, inovação e compromisso. Uma parceria sólida que gera resultados consistentes.",
   },
   {
     name: "João Ferreira",
     role: "Investidor",
-    image: "/images/testimonials/testimonial-3.jpg",
+    image: "/images/testimonial-3.jpg",
     content:
       "O grupo apresenta uma estrutura empresarial robusta e visão clara de crescimento sustentável.",
   },

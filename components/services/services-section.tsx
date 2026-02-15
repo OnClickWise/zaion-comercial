@@ -1,42 +1,49 @@
 "use client"
 
 import Image from "next/image"
-import { Lightbulb, Award, ShieldCheck, Headphones } from "lucide-react"
+import {
+  Calculator,
+  FileCheck,
+  GraduationCap,
+  Briefcase,
+} from "lucide-react"
 
 const services = [
   {
-    icon: Lightbulb,
-    title: "Estratégia & Inovação",
+    icon: Calculator,
+    title: "Serviços de Contabilidade",
     description:
-      "Desenvolvemos soluções estratégicas que impulsionam transformação e crescimento sustentável.",
+      "Gestão contabilística com rigor e transparência, incluindo organização financeira, demonstrações financeiras, controlo de resultados e fecho de contas.",
   },
   {
-    icon: Award,
-    title: "Excelência Operacional",
+    icon: FileCheck,
+    title: "Serviços de Fiscalidade",
     description:
-      "Processos estruturados para garantir desempenho consistente e resultados de alto nível.",
+      "Segurança fiscal e conformidade tributária com cálculo de impostos, declarações fiscais, regularização de dívidas e representação junto da AGT.",
   },
   {
-    icon: ShieldCheck,
-    title: "Experiência & Qualidade",
+    icon: GraduationCap,
+    title: "Consultoria Académica",
     description:
-      "Compromisso com padrões rigorosos de qualidade em todas as unidades do grupo.",
+      "Apoio completo na produção científica, revisão académica, metodologia de investigação e preparação para defesa de trabalhos.",
   },
   {
-    icon: Headphones,
-    title: "Suporte Estratégico",
+    icon: Briefcase,
+    title: "Acompanhamento Estratégico",
     description:
-      "Acompanhamento contínuo e suporte especializado para parceiros e clientes.",
+      "Suporte especializado e orientação profissional para ajudar empresas e estudantes a alcançar resultados sólidos e sustentáveis.",
   },
 ]
 
 export default function ServicesSection() {
   return (
-    <section className="
+    <section
+      className="
       py-28 
       bg-white 
       dark:bg-[#0B1F3B]
-    ">
+    "
+    >
       <div className="container mx-auto px-6 space-y-16">
 
         {/* Header */}
@@ -62,13 +69,15 @@ export default function ServicesSection() {
               return (
                 <div key={index} className="space-y-4">
 
-                  <div className="
+                  <div
+                    className="
                     w-14 h-14 
                     flex items-center justify-center
                     rounded-full 
                     bg-[#C6A75E]/20 
                     text-[#C6A75E]
-                  ">
+                  "
+                  >
                     <Icon size={26} />
                   </div>
 
@@ -89,7 +98,7 @@ export default function ServicesSection() {
           {/* Lado Direito - Imagem */}
           <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/services-main.jpg"
+              src="/images/services1.png"
               alt="Serviços ZAION"
               fill
               className="object-cover"
