@@ -3,7 +3,7 @@
 import { FaWhatsapp } from "react-icons/fa"
 
 export default function WhatsAppButton() {
-  const phone = "5588999999999" // Coloque o número com DDI + DDD
+  const phone = "+244941178851" // Coloque o número com DDI + DDD
   const message = "Olá, gostaria de mais informações sobre os serviços."
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
