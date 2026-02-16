@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const team = [
   {
-    name: "Ricardo Almeida",
+    name: "Avis Miguel",
     role: "Presidente Executivo",
     image: "/images/team-1.jpg",
     bio: "Lidera a estratégia global do grupo com foco em crescimento sustentável e inovação corporativa.",
@@ -16,7 +16,7 @@ const team = [
     bio: "Responsável pela eficiência operacional e integração das unidades de negócio.",
   },
   {
-    name: "Pedro Santos",
+    name: "Leovigildo Miguel",
     role: "Diretor Decnologia",
     image: "/images/team-3.jpeg",
     bio: "Gestão e implementação estratégica com forte orientação para inovação e seguraça tencológica.",
