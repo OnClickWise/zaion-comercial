@@ -6,8 +6,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const banners = [
   "/images/banner1.png",
+  "/images/banner2.png",
+  "/images/banner3.png",
   "/images/banner4.png",
-  "/images/banner5.png",
 ]
 
 export default function HeroCarousel() {
@@ -20,45 +21,61 @@ export default function HeroCarousel() {
   const scrollNext = () => emblaApi?.scrollNext()
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
 
-      {/* Carousel */}
-      <div className="overflow-hidden rounded-3xl shadow-2xl" ref={emblaRef}>
-        <div className="flex">
+      {/* Padding lateral leve */}
+      <div className="px-3 md:px-6 lg:px-8">
 
-          {banners.map((banner, index) => (
-            <div
-              key={index}
-              className="
-                relative
-                flex-[0_0_100%]
-                w-full
-                h-[420px]
-                md:h-[550px]
-                lg:h-[700px]
-              "
-            >
-              <Image
-                src={banner}
-                alt={`Banner ${index + 1}`}
-                fill
-                priority={index === 0}
-                className="object-cover"
-              />
+        {/* Carousel */}
+        <div
+          className="
+            overflow-hidden
+            rounded-3xl
+            shadow-2xl
+            bg-[#0B1F3B]
+          "
+          ref={emblaRef}
+        >
+          <div className="flex">
 
-              {/* overlay */}
-              <div className="absolute inset-0 bg-black/20" />
-            </div>
-          ))}
+            {banners.map((banner, index) => (
+              <div
+                key={index}
+                className="
+                  relative
+                  flex-[0_0_100%]
+                  w-full
+                  h-[280px]
+                  md:h-[420px]
+                  lg:h-[520px]
+                "
+              >
+                <Image
+                  src={banner}
+                  alt={`Banner ${index + 1}`}
+                  fill
+                  priority={index === 0}
+                  className="
+                    object-contain
+                    object-center
+                  "
+                />
 
+                {/* overlay leve */}
+                <div className="absolute inset-0 bg-black/10" />
+              </div>
+            ))}
+
+          </div>
         </div>
+
       </div>
 
       {/* Botão esquerda */}
       <button
         onClick={scrollPrev}
         className="
-          absolute left-4 top-1/2 -translate-y-1/2
+          absolute left-6 md:left-8 top-1/2 -translate-y-1/2
           bg-white/80 hover:bg-white
           text-[#0B1F3B]
           w-10 h-10
@@ -75,7 +92,7 @@ export default function HeroCarousel() {
       <button
         onClick={scrollNext}
         className="
-          absolute right-4 top-1/2 -translate-y-1/2
+          absolute right-6 md:right-8 top-1/2 -translate-y-1/2
           bg-white/80 hover:bg-white
           text-[#0B1F3B]
           w-10 h-10

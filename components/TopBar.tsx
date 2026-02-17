@@ -36,11 +36,11 @@ export default function TopBar() {
             className="flex items-center gap-2 hover:text-[#C6A75E] transition-colors"
           >
             <Phone size={16} />
-            <span>+244 900 000 000</span>
+            <span>+244941178851</span>
           </a>
 
           <a
-            href="https://wa.me/244900000000"
+            href="https://wa.me/+244941178851"
             target="_blank"
             className="hover:text-[#C6A75E] transition-colors"
           >
