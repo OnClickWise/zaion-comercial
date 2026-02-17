@@ -6,42 +6,42 @@ const units = [
     description:
       "Soluções tecnológicas inovadoras focadas em transformação digital, infraestrutura e desenvolvimento estratégico.",
     icon: "cpu",
-    image: "/images/business/tech.jpg",
+    image: "/images/business/tech.png",
   },
   {
     title: "Comércio & Logística",
     description:
       "Operações integradas de comércio e distribuição com eficiência e alcance estratégico.",
     icon: "truck",
-    image: "/images/business/logistica.jpg",
+    image: "/images/business/logis.jpg",
   },
   {
     title: "Hotelaria",
     description:
       "Gestão e desenvolvimento de empreendimentos hoteleiros com foco em excelência.",
     icon: "hotel",
-    image: "/images/business/hotelaria.jpg",
+    image: "/images/business/hotel.png",
   },
   {
     title: "Saúde",
     description:
       "Investimentos e serviços no sector da saúde com foco em inovação.",
     icon: "health",
-    image: "/images/business/saude.jpg",
+    image: "/images/business/medi.jpg",
   },
   {
     title: "Agro",
     description:
       "Produção e gestão agroindustrial com sustentabilidade.",
     icon: "leaf",
-    image: "/images/business/agro.jpg",
+    image: "/images/business/agr.jpg",
   },
   {
     title: "Serviços Técnicos",
     description:
       "Serviços especializados de suporte técnico e manutenção.",
     icon: "wrench",
-    image: "/images/business/servicos.jpg",
+    image: "/images/business/serv.jpg",
   },
 ]
 

@@ -11,11 +11,18 @@ import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Checkbox } from "./ui/checkbox"
 import { Button } from "./ui/button"
+import PagConst from "./pagconst"
 
 export default function ContactSection() {
   return (
-    <section className="w-full py-20 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between gap-16">
+    
+    <section className="w-full pt-12 px-6">
+    <PagConst
+    title="Contatos"
+    text="Converse com nossa equipe por esse canais de atendimento."
+    />
+    
+      <div className="max-w-7xl pt-12 pb-12 mx-auto flex flex-col lg:flex-row items-start justify-between gap-16">
 
         {/* ================= ESQUERDA ================= */}
         <div className="w-full lg:w-1/2">

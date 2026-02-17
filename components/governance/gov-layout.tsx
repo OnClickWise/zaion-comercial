@@ -1,27 +1,16 @@
 import Image from "next/image"
-import Equipe from "./equipe"
+import TeamSection from "../team/TeamSection"
+import PagConst from "../pagconst"
 
 export default function GovernancePage() {
   return (
     <main>
 
-      {/* HERO */}
-    <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#0B1F3B] text-white py-24">
-  <div className="max-w-6xl mx-auto px-6 text-center">
-    
-    <h1 className="text-4xl md:text-5xl font-bold text-[#C6A75E] mb-6">
-      Governança Corporativa
-    </h1>
-
-    <div className="w-24 h-1 bg-[#C6A75E] mx-auto mb-6"></div>
-
-    <p className="max-w-3xl mx-auto text-lg text-gray-300">
-      Transparência, ética e responsabilidade são pilares fundamentais
-      da nossa atuação.
-    </p>
-
-  </div>
-</section>
+  <PagConst
+  title="Governança Corporativa"
+  text="Transparência, ética e responsabilidade são pilares fundamentais
+      da nossa atuação."
+  />
 
       {/* SOBRE GOVERNANÇA */}
       <section className="flex flex-col md:flex-row items-center justify-center gap-12 py-20 px-6">
@@ -117,7 +106,7 @@ export default function GovernancePage() {
       </section>
 
     <section className="py-20 px-6">
-        <Equipe />
+        <TeamSection />
 </section>
     </main>
   )

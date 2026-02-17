@@ -1,10 +1,15 @@
-import React from 'react'
+import PagConst from "@/components/pagconst"
 
 const Sobrepage = () => {
   return (
-    <div>
-      sobre nós Grupo
-    </div>
+   <main className="pt-12">
+    <PagConst
+    title="Sobre o Grupo"
+    text="Conheça um pouco mais sobre nossa empresa."
+    />
+
+    
+    </main>
   )
 }
 
