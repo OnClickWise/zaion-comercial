@@ -61,9 +61,9 @@ export default function Footer() {
             </h4>
 
             <ul className="space-y-2 md:space-y-3 text-sm sm:text-base text-white/70">
-              <li>+244 900 000 000</li>
+              <li>+244 941 178 851</li>
               <li>geral@zaion.co.ao</li>
-              <li>Luanda, Angola</li>
+              <li>Lubango-Huíla, Angola</li>
             </ul>
           </div>
 

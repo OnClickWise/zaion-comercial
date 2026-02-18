@@ -1,4 +1,4 @@
-import { Phone, Linkedin, Instagram, Facebook } from "lucide-react"
+import { Phone, Linkedin, Instagram, Facebook, MapPin } from "lucide-react"
 import {
   Field,
   FieldGroup,
@@ -11,132 +11,135 @@ import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Checkbox } from "./ui/checkbox"
 import { Button } from "./ui/button"
-import PagConst from "./pagconst"
 
-export default function ContactSection() {
+export default function ContactForm() {
   return (
-    
-    <section className="w-full pt-12 px-6">
-    <PagConst
-    title="Contatos"
-    text="Converse com nossa equipe por esse canais de atendimento."
-    />
-    
-      <div className="max-w-7xl pt-12 pb-12 mx-auto flex flex-col lg:flex-row items-start justify-between gap-16">
+    <section className="w-full">
 
-        {/* ================= ESQUERDA ================= */}
-        <div className="w-full lg:w-1/2">
-          <div className="bg-[#C6A75E] rounded-3xl p-10 shadow-lg">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
 
-            <h2 className="text-2xl font-semibold mb-6">
-              Entre em contato
+        {/* ================= INFORMAÇÕES ================= */}
+        <div className="w-full lg:w-1/2 space-y-8">
+
+          <div>
+            <h2 className="text-3xl font-bold mb-4">
+              Fale com nossa equipa
             </h2>
 
-            <p className="mb-6">
-              Nosso time está pronto para atender
+            <p className="text-gray-600 leading-relaxed">
+              Desenvolvemos sites, plataformas, sistemas inteligentes e soluções com IA,
+              fazemos estudo de viabilidade, contabilidade e muito mais, tudo para
+              impulsionar o crescimento do seu negócio.
             </p>
+          </div>
 
-             <a
-            href="tel:+244900000000"
-            className="flex items-center mb-6 gap-2 hover:scale-105 transition-transform"
-          >
-            <Phone size={16} />
-            <span>+244 900 000 000</span>
-          </a>
+          {/* Card Contato */}
+          <div className="bg-gradient-to-br from-[#0B1F3B] to-[#1E3A8A] text-white rounded-3xl p-8 shadow-2xl space-y-6">
 
-          <a
-            href="https://wa.me/244900000000"
-            target="_blank"
-            className="flex mb-6 items-center gap-2 hover:scale-105 transition-transform"
-          >
-            <span className="font-medium">WhatsApp</span>
-          </a>
+            {/* Telefone */}
+            <div>
+              <p className="text-sm text-white/70 mb-2">Telefone</p>
+              <a
+                href="tel:+244941178851"
+                className="flex items-center gap-3 text-lg font-medium hover:opacity-80 transition"
+              >
+                <Phone size={18} />
+                +244 941 178 851
+              </a>
+            </div>
 
-            <p className="mb-4 font-medium">
-              Nos siga nas redes sociais
-            </p>
+            {/* WhatsApp */}
+            <div>
+              <p className="text-sm text-white/70 mb-2">WhatsApp</p>
+              <a
+                href="https://wa.me/244941178851"
+                target="_blank"
+                className="text-lg font-medium hover:opacity-80 transition"
+              >
+                Conversar agora
+              </a>
+            </div>
 
-            <div className="flex gap-5">
-              <Linkedin size={22} className="cursor-pointer hover:scale-110 transition-transform" />
-              <Instagram size={22} className="cursor-pointer hover:scale-110 transition-transform" />
-              <Facebook size={22} className="cursor-pointer hover:scale-110 transition-transform" />
+            {/* Redes sociais */}
+            <div>
+              <p className="text-sm text-white/70 mb-3">
+                Redes Sociais
+              </p>
+
+              <div className="flex gap-5">
+                <Linkedin className="cursor-pointer hover:scale-110 transition-transform" />
+                <Instagram className="cursor-pointer hover:scale-110 transition-transform" />
+                <Facebook className="cursor-pointer hover:scale-110 transition-transform" />
+              </div>
+            </div>
+
+            {/* MAPA */}
+            <div className="space-y-3">
+              <p className="text-sm text-white/70 flex items-center gap-2">
+                <MapPin size={16} />
+                Localização
+              </p>
+
+              <div className="rounded-2xl overflow-hidden border border-white/20 shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps?q=nossa+senhora+do+monte+lubango+huila&output=embed"
+                  width="100%"
+                  height="220"
+                  loading="lazy"
+                  className="w-full"
+                />
+              </div>
             </div>
 
           </div>
+
         </div>
 
-        {/* ================= DIREITA ================= */}
-        <div className="w-full lg:w-1/2">
-          <form className="w-full max-w-xl lg:ml-auto">
+        {/* ================= FORMULÁRIO ================= */}
+        <div className="w-full lg:w-1/2 bg-white rounded-3xl shadow-2xl p-10">
+
+          <form className="space-y-6">
 
             <FieldGroup>
 
               <FieldSet>
                 <FieldGroup>
 
-                  {/* Nome e Sobrenome */}
                   <Field className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-                    <div className="flex flex-col">
+                    <div>
                       <FieldLabel htmlFor="firstName">
                         Primeiro Nome
                       </FieldLabel>
-                      <Input
-                        id="firstName"
-                        placeholder="Nome"
-                        required
-                      />
+                      <Input id="firstName" required />
                     </div>
 
-                    <div className="flex flex-col">
+                    <div>
                       <FieldLabel htmlFor="lastName">
                         Sobrenome
                       </FieldLabel>
-                      <Input
-                        id="lastName"
-                        placeholder="Sobrenome"
-                        required
-                      />
+                      <Input id="lastName" required />
                     </div>
-
                   </Field>
 
-                  {/* Empresa */}
                   <Field>
                     <FieldLabel htmlFor="company">
-                      Nome da Empresa
+                      Empresa
                     </FieldLabel>
-                    <Input
-                      id="company"
-                      placeholder="Digite o nome da empresa"
-                      required
-                    />
+                    <Input id="company" />
                   </Field>
 
-                  {/* Email */}
                   <Field>
                     <FieldLabel htmlFor="email">
-                      Email
+                      Email Profissional
                     </FieldLabel>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="Digite seu Email"
-                      required
-                    />
+                    <Input id="email" type="email" required />
                   </Field>
 
-                  {/* Telefone */}
                   <Field>
                     <FieldLabel htmlFor="phone">
-                      Número de telefone
+                      Telefone
                     </FieldLabel>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="Digite o número de telefone"
-                      required
-                    />
+                    <Input id="phone" type="tel" />
                   </Field>
 
                 </FieldGroup>
@@ -144,50 +147,48 @@ export default function ContactSection() {
 
               <FieldSeparator />
 
-              {/* Mensagem */}
               <FieldSet>
                 <FieldLegend>Mensagem</FieldLegend>
                 <Field>
                   <Textarea
                     id="message"
-                    placeholder="Escreva sua mensagem"
+                    rows={5}
                     className="resize-none"
+                    placeholder="Conte-nos sobre seu projeto"
                   />
                 </Field>
               </FieldSet>
 
-              {/* Checkbox */}
               <Field orientation="horizontal" className="gap-3">
                 <Checkbox id="newsletter" required />
-                <FieldLabel
-                  htmlFor="newsletter"
-                  className="font-normal"
-                >
-                  Eu gostaria de receber emails da Zaion e concordo com a política de privacidade
+                <FieldLabel htmlFor="newsletter" className="font-normal">
+                  Concordo com a política de privacidade
                 </FieldLabel>
               </Field>
 
-              {/* Botões */}
-              <Field orientation="horizontal" className="gap-4 pt-4">
-                <Button
-                  type="submit"
-                  className="bg-[#C6A75E] hover:bg-[#0B1F3B] hover:text-white transition-colors"
-                >
-                  Enviar
-                </Button>
-
-                <Button
-                  variant="outline"
-                  type="button"
-                  className="hover:bg-[#0B1F3B] hover:text-white transition-colors"
-                >
-                  Cancelar
-                </Button>
-              </Field>
+              <Button
+                type="submit"
+                className="
+                  w-full
+                  bg-[#C6A75E]
+                  text-[#0B1F3B]
+                  hover:bg-[#0B1F3B]
+                  hover:text-white
+                  transition-all
+                  duration-300
+                  py-4
+                  rounded-xl
+                  font-semibold
+                  text-base
+                "
+              >
+                Enviar Mensagem
+              </Button>
 
             </FieldGroup>
 
           </form>
+
         </div>
 
       </div>
