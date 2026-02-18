@@ -47,7 +47,7 @@ const units = [
     description:
       "Prestamos serviços técnicos especializados com qualidade, precisão e conformidade. Atuamos na assessoria, manutenção e suporte operacional, garantindo eficiência e segurança nos processos empresariais.",
     icon: "wrench",
-    image: "/images/business/serv.jpg",
+    image: "/images/business/servic.jpg",
     slug: "servicos-tecnicos",
   },
 ]
