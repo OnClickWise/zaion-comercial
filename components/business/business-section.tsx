@@ -1,10 +1,11 @@
+import PagConst from "../pagconst"
 import BusinessItem from "./business-item"
 
 const units = [
   {
     title: "Tecnologia",
     description:
-      "Soluções tecnológicas inovadoras focadas em transformação digital, infraestrutura e desenvolvimento estratégico.",
+      "Desenvolvemos soluções tecnológicas focadas em transformação digital, automação e eficiência operacional. Atuamos com visão estratégica, implementando sistemas inteligentes que aumentam a competitividade e impulsionam o crescimento sustentável das empresas.",
     icon: "cpu",
     image: "/images/business/tech.png",
     slug: "tecnologia",
@@ -12,7 +13,7 @@ const units = [
   {
     title: "Comércio & Logística",
     description:
-      "Operações integradas de comércio e distribuição com eficiência e alcance estratégico.",
+      "Estruturamos operações comerciais e logísticas com foco em eficiência, controlo e redução de custos. Implementamos processos inteligentes que fortalecem a competitividade e aumentam margens de lucro.",
     icon: "truck",
     image: "/images/business/logis.jpg",
     slug: "comercio-logistica",
@@ -20,7 +21,7 @@ const units = [
   {
     title: "Hotelaria",
     description:
-      "Gestão e desenvolvimento de empreendimentos hoteleiros com foco em excelência.",
+      "Oferecemos consultoria estratégica para empreendimentos hoteleiros, com organização financeira, melhoria operacional e foco na experiência do cliente, visando maior rentabilidade e posicionamento de mercado.",
     icon: "hotel",
     image: "/images/business/hotel.png",
     slug: "hotelaria",
@@ -28,7 +29,7 @@ const units = [
   {
     title: "Saúde",
     description:
-      "Investimentos e serviços no sector da saúde com foco em inovação.",
+      "Apoiamos instituições e profissionais da saúde com organização administrativa, controlo financeiro e otimização de processos, promovendo estabilidade, eficiência e qualidade no atendimento.",
     icon: "health",
     image: "/images/business/medi.jpg",
     slug: "saude",
@@ -36,7 +37,7 @@ const units = [
   {
     title: "Agro",
     description:
-      "Produção e gestão agroindustrial com sustentabilidade.",
+      "Oferecemos gestão e soluções estratégicas para o setor agroindustrial, com foco em produtividade, sustentabilidade e organização financeira. Trabalhamos para transformar operações rurais em negócios estruturados e rentáveis.",
     icon: "leaf",
     image: "/images/business/agr.jpg",
     slug: "agro",
@@ -44,7 +45,7 @@ const units = [
   {
     title: "Serviços Técnicos",
     description:
-      "Serviços especializados de suporte técnico e manutenção.",
+      "Prestamos serviços técnicos especializados com qualidade, precisão e conformidade. Atuamos na assessoria, manutenção e suporte operacional, garantindo eficiência e segurança nos processos empresariais.",
     icon: "wrench",
     image: "/images/business/serv.jpg",
     slug: "servicos-tecnicos",
@@ -53,6 +54,11 @@ const units = [
 
 export default function BusinessSection() {
   return (
+    <>
+    <div className="pt-12">
+    <PagConst
+    title="Unidades"
+    text="Saiba mais sobre nossas áreas de atuação"/></div>
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6 space-y-28">
         {units.map((unit, index) => (
@@ -64,5 +70,6 @@ export default function BusinessSection() {
         ))}
       </div>
     </section>
+    </>
   )
 }

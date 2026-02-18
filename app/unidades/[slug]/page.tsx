@@ -45,7 +45,7 @@ export default async function BusinessSlugPage({
         ))}
 
         <Link
-          href="/contato"
+          href= "https://wa.me/244900000000"
           className="inline-block mt-10 px-6 py-3 rounded-xl bg-primary text-white"
         >
           Solicitar Proposta
