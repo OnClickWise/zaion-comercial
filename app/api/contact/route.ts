@@ -1,5 +1,5 @@
-/*import { NextResponse } from "next/server"
-import nodemailer from "nodemailer"
+import { NextResponse } from "next/server"
+//import nodemailer from "nodemailer"
 import { contactSchema } from "@/lib/contact-schema"
 
 const rateLimit = new Map()
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
     const data = contactSchema.parse(body)
 
-    /*const transporter = nodemailer.createTransport({
+   {/* const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: 465,
       secure: true,
@@ -53,11 +53,11 @@ export async function POST(req: Request) {
     })
 
     return NextResponse.json({ success: true })
-
+*/}
   } catch (error) {
     return NextResponse.json(
       { error: "Erro ao enviar." },
       { status: 400 }
     )
   }
-}*/
+}
