@@ -1,14 +1,10 @@
-import PagConst from "@/components/pagconst"
+import GrupoPage from "@/components/grupo/page"
+
 
 const Sobrepage = () => {
   return (
    <main className="pt-12">
-    <PagConst
-    title="Sobre o Grupo"
-    text="Conheça um pouco mais sobre nossa empresa."
-    />
-
-    
+   <GrupoPage/>
     </main>
   )
 }
