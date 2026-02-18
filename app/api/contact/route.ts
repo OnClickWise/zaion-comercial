@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server"
+/*import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 import { contactSchema } from "@/lib/contact-schema"
 
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
     const data = contactSchema.parse(body)
 
-    const transporter = nodemailer.createTransport({
+    /*const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: 465,
       secure: true,
@@ -60,4 +60,4 @@ export async function POST(req: Request) {
       { status: 400 }
     )
   }
-}
+}*/
