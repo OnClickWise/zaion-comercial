@@ -37,33 +37,26 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section
-      className="
-      py-28 
-      bg-white 
-      dark:bg-[#0B1F3B]
-    "
-    >
-      <div className="container mx-auto px-6 space-y-16">
+    <section className="py-16 md:py-24 bg-white dark:bg-[#0B1F3B]">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 space-y-14">
 
         {/* Header */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3B] dark:text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1F3B] dark:text-white">
             Nossos Serviços
           </h2>
 
-          <p className="text-gray-600 dark:text-white/70">
+          <p className="text-sm sm:text-base text-gray-600 dark:text-white/70">
             Atuamos estrategicamente em múltiplos sectores, oferecendo soluções
             integradas com foco em inovação, eficiência e impacto sustentável.
           </p>
         </div>
 
-        {/* Conteúdo Principal */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* Conteúdo */}
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* Lado Esquerdo - Serviços */}
-          <div className="grid sm:grid-cols-2 gap-10">
-
+          {/* Serviços */}
+          <div className="grid sm:grid-cols-2 gap-8 sm:gap-10">
             {services.map((service, index) => {
               const Icon = service.icon
               return (
@@ -71,17 +64,17 @@ export default function ServicesSection() {
 
                   <div
                     className="
-                    w-14 h-14 
-                    flex items-center justify-center
-                    rounded-full 
-                    bg-[#C6A75E]/20 
-                    text-[#C6A75E]
-                  "
+                      w-12 h-12 sm:w-14 sm:h-14
+                      flex items-center justify-center
+                      rounded-full
+                      bg-[#C6A75E]/20
+                      text-[#C6A75E]
+                    "
                   >
-                    <Icon size={26} />
+                    <Icon size={22} />
                   </div>
 
-                  <h3 className="font-semibold text-lg text-[#0B1F3B] dark:text-white">
+                  <h3 className="font-semibold text-base sm:text-lg text-[#0B1F3B] dark:text-white">
                     {service.title}
                   </h3>
 
@@ -92,11 +85,10 @@ export default function ServicesSection() {
                 </div>
               )
             })}
-
           </div>
 
-          {/* Lado Direito - Imagem */}
-          <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+          {/* Imagem */}
+          <div className="relative w-full h-[280px] sm:h-[350px] md:h-[420px] lg:h-[500px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/images/services1.png"
               alt="Serviços ZAION"
@@ -104,8 +96,7 @@ export default function ServicesSection() {
               className="object-cover"
             />
 
-            {/* Overlay leve para dark mode */}
-            <div className="absolute inset-0 bg-black/20 dark:bg-black/40" />
+            <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
           </div>
 
         </div>

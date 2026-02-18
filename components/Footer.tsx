@@ -5,18 +5,18 @@ import Logo from "./ui/logo"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B1F3B] dark:bg-[#111827] text-white pt-20 pb-8">
-      
-      <div className="container mx-auto px-6">
+    <footer className="bg-[#0B1F3B] dark:bg-[#111827] text-white pt-14 md:pt-20 pb-8">
+
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
 
         {/* Grid Principal */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12 md:mb-16">
 
-          {/* Logo + Descrição */}
-          <div className="space-y-6">
-            <Logo/>
+          {/* Logo */}
+          <div className="space-y-4 md:space-y-6">
+            <Logo />
 
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/70 text-sm sm:text-base leading-relaxed">
               Grupo empresarial com atuação estratégica em múltiplos sectores,
               promovendo inovação, crescimento sustentável e excelência
               operacional.
@@ -24,12 +24,12 @@ export default function Footer() {
           </div>
 
           {/* Unidades */}
-          <div className="space-y-6">
-            <h4 className="font-semibold text-lg">
+          <div className="space-y-4 md:space-y-6">
+            <h4 className="font-semibold text-base md:text-lg">
               Unidades
             </h4>
 
-            <ul className="space-y-3 text-white/70">
+            <ul className="space-y-2 md:space-y-3 text-sm sm:text-base text-white/70">
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Tecnologia</Link></li>
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Comércio & Logística</Link></li>
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Hotelaria</Link></li>
@@ -40,12 +40,12 @@ export default function Footer() {
           </div>
 
           {/* Institucional */}
-          <div className="space-y-6">
-            <h4 className="font-semibold text-lg">
+          <div className="space-y-4 md:space-y-6">
+            <h4 className="font-semibold text-base md:text-lg">
               Institucional
             </h4>
 
-            <ul className="space-y-3 text-white/70">
+            <ul className="space-y-2 md:space-y-3 text-sm sm:text-base text-white/70">
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Sobre o Grupo</Link></li>
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Missão & Visão</Link></li>
               <li><Link href="#" className="hover:text-[#C6A75E] transition">Parceiros</Link></li>
@@ -55,12 +55,12 @@ export default function Footer() {
           </div>
 
           {/* Contactos */}
-          <div className="space-y-6">
-            <h4 className="font-semibold text-lg">
+          <div className="space-y-4 md:space-y-6">
+            <h4 className="font-semibold text-base md:text-lg">
               Contactos
             </h4>
 
-            <ul className="space-y-3 text-white/70">
+            <ul className="space-y-2 md:space-y-3 text-sm sm:text-base text-white/70">
               <li>+244 900 000 000</li>
               <li>geral@zaion.co.ao</li>
               <li>Luanda, Angola</li>
@@ -69,14 +69,24 @@ export default function Footer() {
 
         </div>
 
-        {/* Linha Separadora */}
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-white/60 text-sm">
-
-          <p>
+        {/* Linha final */}
+        <div
+          className="
+            border-t border-white/10
+            pt-5 md:pt-6
+            flex flex-col md:flex-row
+            items-center
+            justify-between
+            gap-3 md:gap-4
+            text-white/60
+            text-xs sm:text-sm
+          "
+        >
+          <p className="text-center md:text-left">
             © 2026 ZAION Comércio e Serviços. Todos os direitos reservados.
           </p>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <Link href="#" className="hover:text-[#C6A75E] transition">
               Política de Privacidade
             </Link>
@@ -84,7 +94,6 @@ export default function Footer() {
               Termos & Condições
             </Link>
           </div>
-
         </div>
 
       </div>

@@ -8,12 +8,12 @@ export default function Hero() {
       className="
         relative
         w-full
-        bg-[#1E3A8A]
+        bg-[#071337]
         dark:bg-[#0B1F3B]
+        py-4 md:py-6
       "
     >
-      {/* padding lateral */}
-      <div className="px-4 md:px-8 lg:px-12 py-6">
+      <div className="px-4 md:px-8 lg:px-12">
         <HeroCarousel />
       </div>
     </section>

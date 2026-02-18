@@ -23,86 +23,84 @@ export default function HeroCarousel() {
   return (
     <div className="relative w-full">
 
-      {/* Padding lateral leve */}
-      <div className="px-3 md:px-6 lg:px-8">
+      {/* Carousel */}
+      <div
+        ref={emblaRef}
+        className="
+          overflow-hidden
+          rounded-2xl md:rounded-3xl
+          shadow-2xl
+          bg-[#0B1F3B]
+        "
+      >
+        <div className="flex">
 
-        {/* Carousel */}
-        <div
-          className="
-            overflow-hidden
-            rounded-3xl
-            shadow-2xl
-            bg-[#0B1F3B]
-          "
-          ref={emblaRef}
-        >
-          <div className="flex">
-
-            {banners.map((banner, index) => (
-              <div
-                key={index}
+          {banners.map((banner, index) => (
+            <div
+              key={index}
+              className="
+                relative
+                flex-[0_0_100%]
+                w-full
+                h-[220px]
+                sm:h-[300px]
+                md:h-[420px]
+                lg:h-[500px]
+                xl:h-[560px]
+              "
+            >
+              <Image
+                src={banner}
+                alt={`Banner ${index + 1}`}
+                fill
+                priority={index === 0}
                 className="
-                  relative
-                  flex-[0_0_100%]
-                  w-full
-                  h-[280px]
-                  md:h-[420px]
-                  lg:h-[520px]
+                  object-contain
+                  object-center
                 "
-              >
-                <Image
-                  src={banner}
-                  alt={`Banner ${index + 1}`}
-                  fill
-                  priority={index === 0}
-                  className="
-                    object-contain
-                    object-center
-                  "
-                />
+              />
 
-                {/* overlay leve */}
-                <div className="absolute inset-0 bg-black/10" />
-              </div>
-            ))}
+              <div className="absolute inset-0 bg-black/10" />
+            </div>
+          ))}
 
-          </div>
         </div>
-
       </div>
 
       {/* Botão esquerda */}
       <button
         onClick={scrollPrev}
         className="
-          absolute left-6 md:left-8 top-1/2 -translate-y-1/2
+          absolute left-3 md:left-4
+          top-1/2 -translate-y-1/2
           bg-white/80 hover:bg-white
           text-[#0B1F3B]
-          w-10 h-10
+          w-9 h-9 md:w-10 md:h-10
           rounded-full
           flex items-center justify-center
           shadow-md
           transition
         "
       >
-        <ChevronLeft size={22} />
+        <ChevronLeft size={20} />
       </button>
 
       {/* Botão direita */}
       <button
         onClick={scrollNext}
         className="
-          absolute right-6 md:right-8 top-1/2 -translate-y-1/2
+          absolute right-3 md:right-4
+          top-1/2 -translate-y-1/2
           bg-white/80 hover:bg-white
           text-[#0B1F3B]
-          w-10 h-10
+          w-9 h-9 md:w-10 md:h-10
           rounded-full
           flex items-center justify-center
           shadow-md
           transition
         "
       >
-        <ChevronRight size={22} />
+        <ChevronRight size={20} />
       </button>
 
     </div>

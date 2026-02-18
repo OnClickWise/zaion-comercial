@@ -29,32 +29,32 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-28 bg-[#F5F7FA]">
-      <div className="container mx-auto px-6">
+    <section className="py-16 md:py-24 lg:py-28 bg-[#F5F7FA]">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Lado Esquerdo */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
 
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3B] leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1F3B] leading-tight">
               Testemunhos & Confiança
             </h2>
 
-            <p className="text-gray-600 text-lg">
+            <p className="text-base md:text-lg text-gray-600">
               A reputação do Grupo ZAION é construída através de resultados
               consistentes, parcerias estratégicas e excelência operacional.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               {[
                 "Parcerias empresariais sólidas",
                 "Excelência operacional comprovada",
                 "Compromisso com crescimento sustentável",
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="text-[#C6A75E]" size={20} />
-                  <span className="text-[#0B1F3B] font-medium">
+                  <CheckCircle className="text-[#C6A75E]" size={18} />
+                  <span className="text-[#0B1F3B] font-medium text-sm sm:text-base">
                     {item}
                   </span>
                 </div>
@@ -63,29 +63,28 @@ export default function TestimonialsSection() {
 
           </div>
 
-          {/* Lado Direito - Grid Assimétrico */}
-          <div className="relative grid sm:grid-cols-2 gap-6">
+          {/* Lado Direito */}
+          <div className="relative grid sm:grid-cols-2 gap-5 md:gap-6">
 
             {testimonials.map((item, index) => (
               <div
                 key={index}
                 className={`
                   bg-white
-                  rounded-3xl
-                  p-6
+                  rounded-2xl md:rounded-3xl
+                  p-5 md:p-6
                   shadow-lg
                   hover:shadow-xl
-                  transition-all
-                  duration-300
-                  ${index === 1 ? "mt-10" : ""}
+                  transition-all duration-300
+                  ${index === 1 ? "sm:mt-8 lg:mt-10" : ""}
                 `}
               >
-                <p className="text-gray-700 text-sm leading-relaxed mb-6">
+                <p className="text-gray-700 text-sm leading-relaxed mb-5 md:mb-6">
                   “{item.content}”
                 </p>
 
                 <div className="flex items-center gap-3">
-                  <div className="relative h-10 w-10">
+                  <div className="relative h-10 w-10 flex-shrink-0">
                     <Image
                       src={item.image}
                       alt={item.name}
@@ -103,6 +102,7 @@ export default function TestimonialsSection() {
                     </p>
                   </div>
                 </div>
+
               </div>
             ))}
 
